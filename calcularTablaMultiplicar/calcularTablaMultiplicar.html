@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function saltarLinea() {
+            document.write("<br>");
+        }
+    
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+        }
+        
+       var contador = 1;
+
+       tablaMultiplicar=parseInt(prompt("Ingresa la tabla de multiplicar"));
+
+        imprimir("WHILE");
+        while(contador <= 10){
+            imprimir(contador + "*" + tablaMultiplicar + "=" + (contador*tablaMultiplicar));
+            contador++;
+        }
+        imprimir("FOR")
+
+        for(var contador = 1; contador<=10; contador++){
+            imprimir(contador + "*" + tablaMultiplicar + "=" + (contador*tablaMultiplicar));
+        }
+
+    </script>
+</body>
+
+<!-- Preguntale a fer -->
+</html>
